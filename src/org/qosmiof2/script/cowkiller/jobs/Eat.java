@@ -3,8 +3,8 @@ package org.qosmiof2.script.cowkiller.jobs;
 import org.powerbot.script.Filter;
 import org.powerbot.script.rt6.ClientContext;
 import org.powerbot.script.rt6.Item;
-import org.qosmiof2.script.cowkiller.UI.Gui;
 import org.qosmiof2.script.cowkiller.framework.Node;
+import org.qosmiof2.script.cowkiller.ui.Gui;
 
 public class Eat extends Node {
 

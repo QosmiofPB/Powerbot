@@ -11,12 +11,13 @@ import org.powerbot.script.PaintListener;
 import org.powerbot.script.PollingScript;
 import org.powerbot.script.Script.Manifest;
 import org.powerbot.script.rt4.Skills;
-import org.qosmiof2.script.cowkiller.UI.Gui;
 import org.qosmiof2.script.cowkiller.framework.Node;
+import org.qosmiof2.script.cowkiller.ui.Gui;
 
 @Manifest(description = "Kills cow for great experience!", name = "QCowKiller")
-public class Main extends PollingScript<org.powerbot.script.rt6.ClientContext>
-		implements PaintListener {
+public class QCowKiller extends
+		PollingScript<org.powerbot.script.rt6.ClientContext> implements
+		PaintListener {
 
 	public static ArrayList<Node> nodeList = new ArrayList<Node>();
 	private int startExp, expGained;

@@ -1,4 +1,4 @@
-package org.qosmiof2.script.cowkiller.UI;
+package org.qosmiof2.script.cowkiller.ui;
 
 import java.awt.Component;
 import java.awt.Dimension;
@@ -26,7 +26,7 @@ import javax.swing.border.EtchedBorder;
 
 import org.powerbot.script.rt6.ClientAccessor;
 import org.powerbot.script.rt6.ClientContext;
-import org.qosmiof2.script.cowkiller.Main;
+import org.qosmiof2.script.cowkiller.QCowKiller;
 import org.qosmiof2.script.cowkiller.data.GroundItems;
 import org.qosmiof2.script.cowkiller.jobs.Attack;
 import org.qosmiof2.script.cowkiller.jobs.Eat;
@@ -256,12 +256,12 @@ public class Gui extends ClientAccessor {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				if (lootCheckBox.isSelected()) {
-					Main.nodeList.add(new Loot(ctx, Gui.this));
+					QCowKiller.nodeList.add(new Loot(ctx, Gui.this));
 				}
 				if (foodCheckBox.isSelected()) {
-					Main.nodeList.add(new Eat(ctx, Gui.this));
+					QCowKiller.nodeList.add(new Eat(ctx, Gui.this));
 				}
-				Main.nodeList.add(new Attack(ctx));
+				QCowKiller.nodeList.add(new Attack(ctx));
 			}
 
 		});

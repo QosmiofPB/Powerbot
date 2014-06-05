@@ -4,8 +4,8 @@ import org.powerbot.script.Filter;
 import org.powerbot.script.Random;
 import org.powerbot.script.rt6.ClientContext;
 import org.powerbot.script.rt6.GroundItem;
-import org.qosmiof2.script.cowkiller.UI.Gui;
 import org.qosmiof2.script.cowkiller.framework.Node;
+import org.qosmiof2.script.cowkiller.ui.Gui;
 
 public class Loot extends Node {
 
